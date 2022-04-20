@@ -1,0 +1,35 @@
+.nav-item {
+  padding: 0 20px 0 0;
+}
+
+.navbar-nav {
+  display: flexbox;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.navbar {
+  margin-bottom: 20px;
+  min-width: 650px;
+  min-height: 45px;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+main {
+  margin: 40px;
+}
+
+footer {
+  text-align: center;
+  margin: 30px;
+}
+
+.project-cards{
+  display: flexbox;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
