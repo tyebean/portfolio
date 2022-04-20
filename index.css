@@ -1,0 +1,104 @@
+.nav-item {
+  padding: 0 20px 0 0;
+}
+
+.navbar-nav {
+  display: flexbox;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.navbar {
+  margin-bottom: 20px;
+  min-width: 650px;
+  min-height: 45px;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #464545;
+}
+
+main {
+  margin: 40px;
+}
+
+footer {
+  text-align: center;
+  /* margin-top: 60px;
+  margin: 30px; */
+}
+
+div.project-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 600px;
+}
+
+div.card {
+  margin: 10px;
+  border: none;
+}
+
+div.skills, div.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 500px;
+  margin: 50px;
+}
+
+div.contact {
+  margin: 50px;
+  justify-content: space-around;
+}
+
+input {
+  display: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
