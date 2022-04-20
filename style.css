@@ -10,7 +10,7 @@
 
 .navbar {
   margin-bottom: 20px;
-  min-width: 650px;
+  width: fit-content;
   min-height: 45px;
 }
 
@@ -28,16 +28,14 @@ main {
 
 footer {
   text-align: center;
-  /* margin-top: 60px;
-  margin: 30px; */
+  margin: 50px;
 }
 
-div.project-cards{
+div.project-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  min-width: 600px;
 }
 
 div.card {
@@ -50,8 +48,7 @@ div.skills, div.contact {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  min-width: 500px;
-  margin: 50px;
+  /* margin: 50px; */
 }
 
 div.contact {
