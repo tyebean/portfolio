@@ -20,7 +20,10 @@ body {
 }
 
 main {
-  margin: 40px;
+  margin: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 10px;
 }
 
 footer {
