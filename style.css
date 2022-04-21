@@ -31,6 +31,7 @@ footer {
   margin: 50px;
 }
 
+/* flex container */
 div.project-cards {
   display: flex;
   flex-direction: row;
@@ -41,6 +42,12 @@ div.project-cards {
 div.card {
   margin: 10px;
   border: none;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
 }
 
 div.skills, div.contact {
