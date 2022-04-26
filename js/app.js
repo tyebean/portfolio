@@ -1,24 +1,35 @@
-function myFunction() {
-  /* Get the text field */
-  const copyText = "hello"
 
-  /* Select the text field */
-  // copyText.select();
-  // copyText.setSelectionRange(0, 99999); /* For mobile devices */
+const successAlert = document.querySelector("alert-success")
+const failAlert = document.querySelector("danger-success")
 
-   /* Copy the text inside the text field */
-  navigator.clipboard.writeText("hello");
-
-
-  /* Alert the copied text */
-
-  console.log(copyText);
-  alert("Copied the text: " + copyText);
+if (navigator.clipboard) {
+  console.log("I have access to your clipboard. Yeehaw.");
+} else {
+  console.log("I do not have access to your clipboard. Boo.");
 }
 
+// function unhideAlert(){
+//   successAlert.style.display = "initial"
+// }
+// unhideAlert()
 
-function outFunc() {
-  const tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copy to clipboard";
+// focusMethod = function getFocus() {
+//   document.getElementById("alert-success").focus();
+// }
+
+function copyGmail() {
+  navigator.permissions.query({ name: 'clipboard-read' }).then(result => {
+    if (result.state === 'granted' || result.state === 'prompt') {
+      navigator.clipboard.readText()
+        .then(() => {
+          document.getElementById("gmailButton").focus();
+          navigator.clipboard.writeText("tye.shay.web@gmail.com")
+          throw alert("sucess copy")
+        })
+        .catch(err => {
+          alert("fail copy", err)
+        });
+    }
+  })
 }
 
