@@ -1,3 +1,23 @@
 https://drive.google.com/file/d/1FSUZd6eOgPESJ0XcPNGDKgCf9xXrhAFj/view
 
 rubric for this ^
+
+todo list:
+
+finish copy to clipboard
+add sucessful copy alert
+add tooltipupon hover that says 'copy email' and 'copy discord'
+
+add note that says **pls** consider sending a msg when connecting on linked in
+
+download resume pdf
+
+
+fix the code svg to go to the right place (giving 404)
+
+fix the double here 
+
+add more padding between different sections
+
+adjust size of icons to visually look the same size
+
