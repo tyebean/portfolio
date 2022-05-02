@@ -3,6 +3,8 @@ const alertSuccess = document.querySelector("alert-success")
 const alertFail = document.querySelector("danger-success")
 const gmailButton = document.querySelector("gmail-button")
 const discordButton = document.querySelector("discord-button")
+const gmailTooltip = document.querySelector('#gmail-tooltip');
+const discordTooltip = document.querySelector('#discord-tooltip');
 
 if (navigator.clipboard) {
   console.log("I have access to your clipboard. Yeehaw.");
@@ -25,7 +27,7 @@ function copyGmail() {
       navigator.clipboard.readText()
         .then(() => {
           // document.getElementById("gmailButton").focus();
-          navigator.clipboard.writeText("tye.shay.web@gmail.com")
+          navigator.clipboard.writeText("flower.webster@gmail.com")
           // throw alert("sucess copy")
         })
         .catch(err => {
@@ -35,6 +37,11 @@ function copyGmail() {
   })
 }
 
+// Pass the button, the tooltip, and some options, and Popper will do the
+  // magic positioning for you:
+  Popper.createPopper(button, gmailTooltip, {
+    placement: 'top',
+  });
 
 // user uses gmail button, copies textA
 // user uses discord button, copies textb
