@@ -38,7 +38,10 @@ footer {
   margin: 50px;
 }
 
-/* flex container */
+.project-section {
+  margin-top: 50px;
+}
+
 div.project-content {
   display: flex;
   flex-direction: row;
@@ -59,9 +62,12 @@ div.card {
   filter: grayscale(100%);
 }
 
-
 .card-img-top:hover {
   filter: none;
+}
+
+.skill-container{
+  margin-top: 50px;
 }
 
 div.skill-content, div.contact {
@@ -69,7 +75,6 @@ div.skill-content, div.contact {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* margin: 50px; */
 }
 
 div.skill-content, div.contact {
@@ -77,12 +82,12 @@ div.skill-content, div.contact {
   justify-content: space-around;
 }
 
-.skill{
+.skill {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 
-.skill:hover{
+.skill:hover {
   filter:none;
 }
 
@@ -91,9 +96,7 @@ button {
   background-color: transparent;
 }
 
-.project-section {
-  margin-top: 20px;
-}
+
 
 .skill-section {
   margin: 20px 0 20px 0;
