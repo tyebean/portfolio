@@ -1,0 +1,5 @@
+
+git add . (or specific files) to stage the changes.
+git commit -m "Descriptive message" to commit the changes locally.
+git push origin <branch_name> to push the committed changes to GitHub. \
+
